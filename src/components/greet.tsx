@@ -3,5 +3,9 @@ type GreetProps = {
 };
 
 export default function Greet(props: GreetProps) {
-  return <div>Hello {props.name}</div>;
+  return (
+    <div>
+      Hello {props.name} {props.name ? "Hey" : "Noice"}
+    </div>
+  );
 }
